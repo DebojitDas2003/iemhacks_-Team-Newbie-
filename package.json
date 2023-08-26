@@ -1,7 +1,7 @@
 {
   "name": "medaio",
   "version": "0.1.0",
-  "description": "Entire pack of MedAIO",
+  "description": "Entire pack of Medaio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
