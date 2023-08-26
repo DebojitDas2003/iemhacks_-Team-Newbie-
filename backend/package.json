@@ -6,10 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "medaio"
-  },
   "author": "Debojit Das",
   "license": "ISC",
   "dependencies": {
