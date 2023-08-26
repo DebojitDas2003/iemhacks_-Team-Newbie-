@@ -3,10 +3,9 @@ const mongoose = require('mongoose');
 const app = express();
 // Middleware setup (body parsing, CORS, etc.)
 app.use(express.json());
-// Add more middleware if needed
 
-// Define routes
-// Example:
+
+
 app.get('/', (req, res) => {
   res.send('Hello, Express!');
 });

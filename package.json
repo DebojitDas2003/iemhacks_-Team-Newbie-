@@ -1,21 +1,17 @@
 {
   "name": "medaio",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Entire pack of Medaio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:backend": "node server.js",
+    "start:frontend": "npm run dev",
+    "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   },
   "author": "Debojit Das",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.1"
-  }
-}
-{
-  "scripts": {
-    "start:backend": "node server.js",
-    "start:frontend": "npm run dev", 
-    "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   }
 }
