@@ -1,30 +1,38 @@
-const express = require('express');
-const mongoose = require('mongoose');
+const express = require("express");
+const bodyParser = require("body-parser");
+const MongoClient = require("mongodb").MongoClient;
+
 const app = express();
-// Middleware setup (body parsing, CORS, etc.)
-app.use(express.json());
-// Add more middleware if needed
+app.use(bodyParser.json());
 
-// Define routes
-// Example:
-app.get('/', (req, res) => {
-  res.send('Hello, Express!');
+const mongoUrl = "mongodb://localhost:27017";
+const dbName = "user";
+const collectionName = "your_collection_name";
+
+app.post("/process_form", (req, res) => {
+    const formData = req.body;
+
+    MongoClient.connect(mongoUrl, (err, client) => {
+        if (err) throw err;
+
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+
+        collection.insertOne(formData, (err, result) => {
+            if (err) {
+                console.error("Error inserting data:", err);
+                res.status(500).send("Internal Server Error");
+            } else {
+                console.log("Data inserted successfully");
+                res.json({ message: "Data inserted successfully" });
+            }
+
+            client.close();
+        });
+    });
 });
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/mydatabase', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => {
-  console.log('Connected to MongoDB');
-})
-.catch((error) => {
-  console.error('Error connecting to MongoDB:', error);
-});
-
-// Start the server
-const PORT = process.env.PORT || 6969;
+const PORT = 6969;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
