@@ -3,24 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="next.css"> 
+  <link rel="stylesheet" href="next.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
   <title>Doctor's Page</title>
 </head>
 <body>
   <header class="main-header">
     <nav class="navbar">
-      <div class="logo">Doctor's</div>
+      <div class="logo">MedAIO</div>
       <ul class="main-menu">
         <li><a href="#">History</a></li>
-        <li class="dropdown">
-          <a href="#">Checkup</a>
-          <ul class="sub-menu">
-            <li><a href="#">Patient's History</a></li>
-            <li><a href="#">Current Medicine</a></li>
-            <li><a href="#">Prescription</a></li>
-            <li><a href="#">Patient Status</a></li>
-          </ul>
-        </li>
         <li><a href="#">Appointments</a></li>
         <li><a href="#">Medicine Information</a></li>
         <li><a href="#">Order Medicine</a></li>
@@ -31,21 +24,93 @@
       </div>
     </nav>
   </header>
+  <button id="checkupButton">Checkup</button>
+
+  <div id="checkupModal" class="modal">
+      <div class="modal-content">
+          <h2>Check up </h2>
+          <form>
+            <form action="#" method="POST">
+              <label for="patient-name">Patient's Name:</label>
+              <input type="text" id="patient-name" name="patient-name" required>
+              
+              <label for="date-of-birth">Date of Birth:</label>
+              <input type="date" id="date-of-birth" name="date-of-birth" required>
+              
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+              </select>
+              
+              <label for="symptoms">Symptoms:</label>
+              <textarea id="symptoms" name="symptoms" required></textarea>
+              
+              <label for="diagnosis">Diagnosis:</label>
+              <textarea id="diagnosis" name="diagnosis" required></textarea>
+              
+              <label for="prescription">Prescription:</label>
+              <textarea id="prescription" name="prescription" required></textarea>
+              <label for="follow-up-date">Follow-up Date:</label>
+              <input type="date" id="follow-up-date" name="follow-up-date">
+              <label for="doctor-notes">Doctor's Notes:</label>
+            <textarea id="doctor-notes" name="doctor-notes"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+  </div>
 
   <section class="hero-section">
-    <h1>Welcome to Our Website</h1>
-    <p>Your health and safety are our top priorities. Use our
+    <h1>Welcome to MedAlO</h1>
+    <p><b>Your health and safety are our top priorities. Use our
        user-friendly platform to easily check the expiration 
        dates of your medical supplies and medications. By staying <br>
        informed about expiration dates, you can ensure the effectiveness
         and safety of your healthcare products. Put your well-being first 
-        with our convenient Medical Expiry Checker.
-
-
-
-
-    </p>
+        with our convenient MedAlO website.</b> </p>
+    
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slide1.png" class="d-block" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="slide2.jpg" class="d-block" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="slide4.jpg" class="d-block" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </section>
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
+
+    <script>
+        // Get the modal and button elements
+        var modal = document.getElementById("checkupModal");
+        var button = document.getElementById("checkupButton");
+
+        // When the button is clicked, open the modal
+        button.addEventListener("click", function() {
+            modal.style.display = "block";
+        });
+
+        // When the user clicks anywhere outside the modal, close it
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
