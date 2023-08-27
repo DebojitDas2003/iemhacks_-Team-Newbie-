@@ -63,3 +63,58 @@ body {
 #search-button:hover {
     background-color: #0056b3;
 }
+.swipper{
+    width: 950px;
+}
+
+.section .card .image{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #7d2ae8;
+}
+.section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    /* background: #7d2ae8; */
+    border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+.card .topic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+.card .topic .topic-name{
+    font-size: 25px;
+    font-weight: 600;
+}
+.card .topic .line{
+    font-size: 15px;
+    font-weight: 600;
+}
+
