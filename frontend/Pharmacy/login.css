@@ -733,9 +733,9 @@ body {
 
 input,
 button {
-  color: #fdf7f7;
+  color: #ce7878;
   font-family: Nunito;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   border: 0;
   background-color: transparent;
@@ -750,14 +750,14 @@ button {
   padding: 0.5px;
   margin: -10px auto 0 auto;
   background-color: #faf3f3;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #f2d6d6eb;
   transform: scale(0.6);
   backdrop-filter:inherit;
 }
 
 form {
-  height: 106px;
+  height: 80px;
 }
 
 input[type="text"] {
@@ -786,10 +786,10 @@ button {
 
 #s-circle {
   position: relative;
-  top: -8px;
+  top: -1px;
   left: 0;
-  width: 43px;
-  height: 43px;
+  width: 45px;
+  height: 45px;
   margin-top: 0;
   border-width: 10px;
   border: 5px solid #111111;
@@ -800,7 +800,7 @@ button {
 
 button span {
   position: absolute;
-  top: 68px;
+  top: 70px;
   left: 40px;
   display: block;
   width: 45px;
@@ -808,7 +808,7 @@ button span {
   background-color: transparent;
   border-radius: 10px;
   transform: rotateZ(52deg);
-  transition: 0.5s ease all;
+  transition: 0.2s ease all;
 }
 
 button span:before,
