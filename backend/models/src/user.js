@@ -15,6 +15,8 @@ user.set("view engine","hbs");
 user.set("views",template_path);
 user.set("templates")
 hbs.registerPartials(views_path);
+user.set('view engine', 'hbs'); // Set the view engine to Handlebars
+user.set('views', path.join(__dirname, 'views')); // Specify the path to your views directory
 
 user.get("/", (req,res) => {
     res.render("index")
