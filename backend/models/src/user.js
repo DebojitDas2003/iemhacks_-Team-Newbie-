@@ -13,5 +13,5 @@ user.get("/", (req,res) => {
 });
 
 user.listen(port,() => {
-    console.log('server is running at port no ${port}');
+    console.log('server is running at port no $3000');
 })
