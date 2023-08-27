@@ -78,7 +78,7 @@ body{
     font-size: smaller;
     font-weight: 600;
 }
-.input-field input{
+.input-field button{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -90,7 +90,7 @@ body{
     border-top: 2px solid transparent;
     transition: all 0.2s ease;
 }
-.input-field input:is(:focus, :valid){
+.input-field button:is(:focus, :valid){
     border-bottom-color: #4070f4;
 }
 .input-field i{
@@ -101,7 +101,7 @@ body{
     font-size: 23px;
     transition: all 0.2s ease;
 }
-.input-field input:is(:focus, :valid) ~ i{
+.input-field button:is(:focus, :valid) ~ i{
     color: #4070f4;
 }
 .input-field i.icon{
