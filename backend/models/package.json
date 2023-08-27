@@ -5,13 +5,14 @@
   "main": "user.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/user.js"
+    "dev": "nodemon src/user.js -e js,hbs"
   },
   "author": "Srijani",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "hbs": "^4.2.0",
-    "mongoose": "^7.4.5"
+    "mongoose": "^7.4.5",
+    "nodemon": "^3.0.1"
   }
 }
