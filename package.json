@@ -4,10 +4,14 @@
   "description": "Entire pack of Medaio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1", 
     "start:backend": "node server.js",
     "start:frontend": "npm run dev",
-    "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+    "start:both": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+
+  "lint": "eslint .",
+  "build": "webpack",
+  "start": "node server.js"
   },
   "author": "Debojit Das",
   "license": "ISC",
