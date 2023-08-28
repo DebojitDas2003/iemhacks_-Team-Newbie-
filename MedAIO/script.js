@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // redirecting to patient page
   const patient = document.getElementById("patient");
   patient.addEventListener("click", function () {
-    window.location.href = "frontend/patient/login.html";
+    window.location.href = "frontend/patient/loginpage.html";
   });
 
   //redirecting to pharmacy page
