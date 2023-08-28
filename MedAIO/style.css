@@ -71,7 +71,7 @@ body::after {
     z-index: 1;
 }
 
-.offers {
+.role {
     position: relative;
     text-align: center;
     background: #fff;
@@ -88,7 +88,7 @@ body::after {
     transition: all 0.5s ease-in-out; 
 }
 
-.offers:hover {
+.role:hover {
     position: relative;
     top: -20px;
     box-shadow: 0px 14px 6px 0px #0000004d;
