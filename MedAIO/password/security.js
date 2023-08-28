@@ -5,7 +5,22 @@ const hbs = require("hbs");
 const bcrypt = require("bcryptjs");
 const Register = require("./register");
 
-require("./db/conn");
+require("./src/db/conn");
+const Register = require("./model/registers");
+const { require } = require("express");
+const { log } = require(console);
+
+const port = process.env.PORT || 3000;
+
+const static_path = path.join(__dirname, "''/public");
+const template_path = path.join(_dirname,"../templates/views" );
+const participate_path = path.join(_dirname,"../templates/partials");
+
+app.use(express.json());
+app.use(express.urlencoded({extented:false}));
+
+app.use(express.static(static_path));
+app.set("view engine", "hbs");
 
 
 
