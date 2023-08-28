@@ -25,7 +25,7 @@ body{
 .container .forms{
     display: flex;
     align-items: center;
-    height: 440px;
+    height: 400px;
     width: 210%; 
     transition: height 0.2s ease;
 }
@@ -164,4 +164,13 @@ body{
 .form .login-signup{
     margin-top: 30px;
     text-align: center;
+}
+@media only screen and (max-width: 540px) {
+    .container{
+        min-height: 50vh;
+    }
+    .container .forms{
+        width: 210%;
+        height: 500px;
+    }
 }
