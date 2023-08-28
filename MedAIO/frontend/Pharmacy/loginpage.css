@@ -26,17 +26,23 @@ body{
     display: flex;
     align-items: center;
     height: 440px;
-    width: 232%;
+    width: 210%; 
     transition: height 0.2s ease;
 }
 .container .form{
-    width: 50%;
-    padding: 30px;
+    width: 41.7%;
+    padding-left: 40px;
+    /* padding-left: 40px; */
     background-color: #fff;
     transition: margin-left 0.18s ease;
 }
+.form .login{
+    margin-left: 20px;
+    align-items: center;
+    padding: 50px;
+}
 .container.active .login{
-    margin-left: -50%;
+    margin-left: -40%;
     opacity: 0;
     transition: margin-left 0.18s ease, opacity 0.15s ease;
 }
@@ -49,7 +55,7 @@ body{
     transition: opacity 0.2s ease;
 }
 .container.active .forms{
-
+    /* width: 1000px; */
     height: 600px;
 }
 .container .form .title{
@@ -96,7 +102,7 @@ body{
 .input-field i{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     color: #999;
     font-size: 23px;
     transition: all 0.2s ease;
