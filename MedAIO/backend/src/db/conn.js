@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/medaio", {
+mongoose.connect("mongodb+srv://Debojit:<password>@medaio.inpray3.mongodb.net/", {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
