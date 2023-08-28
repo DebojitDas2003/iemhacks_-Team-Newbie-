@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(contactimg.png) no-repeat;
+    background: #00bcd4;
     background-size: cover;
   }
   .contact .content{
