@@ -101,7 +101,7 @@ body{
 }
 .input-field i{
     position: absolute;
-    top: 50%;
+    top: 115%;
     transform: translateY(-100%);
     color: #999;
     font-size: 23px;
@@ -117,6 +117,7 @@ body{
     right: 0;
     cursor: pointer;
     padding: 10px;
+    padding-top: 5px;
 }
 .form .checkbox-text{
     display: flex;
