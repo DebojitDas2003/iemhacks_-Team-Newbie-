@@ -26,11 +26,11 @@ body{
     display: flex;
     align-items: center;
     height: 400px;
-    width: 210%; 
+    width: 100%; 
     transition: height 0.2s ease;
 }
 .container .form{
-    width: 41.7%;
+    width: 90%;
     padding-left: 40px;
     /* padding-left: 40px; */
     background-color: #fff;

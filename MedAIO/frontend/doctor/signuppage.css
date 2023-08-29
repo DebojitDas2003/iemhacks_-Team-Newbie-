@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -27,16 +26,26 @@ body{
     display: flex;
     align-items: center;
     height: 400px;
-    width: 210%; 
+    width: 100%; 
     transition: height 0.2s ease;
 }
 .container .form{
-    width: 41.7%;
+    width: 90%;
     padding-left: 40px;
     background-color: #fff;
     transition: margin-left 0.18s ease;
 }
-.form .signup{
+.form .login{
+    margin-left: 20px;
+    align-items: center;
+    padding: 50px;
+}
+.container.active .login{
+    margin-left: -40%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.container .signup{
     opacity: 0;
     transition: opacity 0.09s ease;
 }
@@ -52,8 +61,96 @@ body{
     font-size: 27px;
     font-weight: 600;
 }
-/* ... (rest of the CSS rules specific to the signup page) ... */
+form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 25px;
+}
+.form .input-field{
+    position: relative;
+    height: 25px;
+    width: 100%;
+    margin-top: 30px;
+}
+.form span{
+    padding-top: 10px;
+    font-size: smaller;
+    font-weight: 600;
+}
 
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+.input-field i{
+    position: absolute;
+    top: 115%;
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+    padding-top: 5px;
+}
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: #4070f4;
+}
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: #265df2;
+}
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
 @media only screen and (max-width: 540px) {
     .container{
         min-height: 50vh;
