@@ -165,3 +165,12 @@ body{
     margin-top: 30px;
     text-align: center;
 }
+@media only screen and (max-width: 540px) {
+    .container{
+        min-height: 50vh;
+    }
+    .container .forms{
+        width: 210%;
+        height: 500px;
+    }
+}

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // redirecting to doctor page
   const doctor = document.getElementById("doctor");
   doctor.addEventListener("click", function () {
-    window.location.href = "frontend/doctor/login.html";
+    window.location.href = "frontend/doctor/loginpage.html";
   });
 
   // redirecting to patient page
