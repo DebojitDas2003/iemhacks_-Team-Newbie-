@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prescription.css">
+    <title>Prescription Writing</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Prescription Writing</h1>
+        <form id="prescriptionForm">
+            <label for="patientName">Patient's Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="medications">Medications:</label>
+            <textarea id="medications" name="medications" rows="6" required></textarea>
+            
+            <button type="submit">Generate Prescription</button>
+        </form>
+        <div id="prescriptionOutput" class="prescription"></div>
+    </div>
+    <script src="prescription.js"></script>
+</body>
+</html>
