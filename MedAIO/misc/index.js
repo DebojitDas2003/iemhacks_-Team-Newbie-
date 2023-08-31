@@ -1,7 +1,7 @@
 const express = require('express');
 const db = require('./db');
-const apiRoutes = require('./api');
-
+const loginApi = require('./login/api');
+const registrationApi = require('./registration/api');
 const app = express();
 
 app.use(express.json());
