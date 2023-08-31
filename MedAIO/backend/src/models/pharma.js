@@ -11,6 +11,7 @@ const pharmaSchema = new  mongoose.Schema({
         required:true,
         unique: true,
     }
+    
 })
 
 //we are creating a new collection
