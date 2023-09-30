@@ -17,17 +17,17 @@
         <div class="forms">
             <div class="form signup">
                 <span class="title">Registration</span>
-                <form action="connect.php" method="POST">
+                <form action="/register" method="POST">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your name" required name="name">
+                        <input type="text" name="name" placeholder="Enter your name" required>
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required name="email">
+                        <input type="text" name="email" placeholder="Enter your email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required name="password">
+                        <input type="password" name="password" class="password" placeholder="Create a password" required>
                         <i class="uil uil-lock icon"></i>
                     </div>
                     <div class="input-field">
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="input-field button">
-                        <input type="button" value="Signup">
+                        <input type="submit" value="Signup">
                     </div>
                 </form>
                 <div class="login-signup">
