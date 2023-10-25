@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "express": "^4.18.2",
-    "har-validator": "^5.1.5",
-    "request": "^2.88.2",
-    "uuid": "^9.0.0"
-  }
-}
