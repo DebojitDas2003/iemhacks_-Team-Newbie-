@@ -66,9 +66,9 @@ body {
 
 /**hero-section**/
 .hero-section{
-    background-image: url("patient\ image/im9.jpg");
+    background-image: url("../patient\ pic/im9.jpg");
     height: 600px;
-    width: 1500px;
+    width: 1520px;
     border-radius: 20px;
     justify-content: center;
 
@@ -100,63 +100,63 @@ h2{
 }
 .box-img1{
 
-    height: 230px;
-    width: 350px;
+    height: 226px;
+    width: 345px;
     align-content: center;
-    background-image: url("patient\ image/ima3.png");
+    background-image: url("../patient\ pic/ima3.png");
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .box-img2{
     height: 200px;
     width: 350px;
     align-content: center;
-    background-image: url("patient\ image/ima5.jpg");
+    background-image: url("../patient\ pic/ima5.jpg");
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .box-img3{
     height: 200px;
     width: 350px;
     align-content: center;
-    background-image: url("patient\ image/ima1.png");
-    border-radius: 10px;
+    background-image: url("../patient\ pic/ima1.png");
+    border-radius: 15px;
 }
 
 .box-img4{
     height: 200px;
     width: 350px;
     align-content: center;
-    background-image: url("patient\ image/imaappoint.jpg");
-    border-radius: 10px;
+    background-image: url("../patient\ pic/imaappoint.jpg");
+    border-radius: 15px;
 }
 .box-img5{
     height: 220px;
     width: 340px;
     align-content: center;
-    background-image: url("patient\ image/im11.jpg");
-    border-radius: 10px;
+    background-image: url("../patient\ pic/im11.jpg");
+    border-radius: 15px;
 }
 .box-img6{
-    height: 230px;
-    width: 350px;
+    height: 226px;
+    width: 345px;
     align-content: center;
-    background-image: url("patient\ image/im10.jpg");
-    border-radius: 10px;
+    background-image: url("../patient\ pic/im10.jpg");
+    border-radius: 15px;
 }
 .box-img7{
-    height: 230px;
-    width: 340px;
-    align-content: center;
-    background-image: url("patient\ image/imadoctor.jpg");
-    border-radius: 10px;
+    height: 227px;
+    width: 344px;
+    justify-content: center;
+    background-image: url("../patient\ pic/imadoctor.jpg");
+    border-radius: 15px;
 }
 .box-img8{
-    height: 230px;
-    width: 340px;
+    height: 227px;
+    width: 347px;
     align-content: center;
-    background-image: url("patient\ image/im13.jpg");
-    border-radius: 10px;
+    background-image: url("../patient\ pic/im13.jpg");
+    border-radius: 15px;
 }
 
 
