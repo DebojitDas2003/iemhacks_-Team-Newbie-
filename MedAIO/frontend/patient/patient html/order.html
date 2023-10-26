@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Medicine</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    margin-top: 0;
+    color: #333;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Order Medicine</h1>
+  <form>
+    <label for="medicine">Select Medicine:</label>
+    <select id="medicine" name="medicine">
+      <option value="medicine1">Medicine 1</option>
+      <option value="medicine2">Medicine 2</option>
+      <option value="medicine3">Medicine 3</option>
+      <option value="medicine2">Medicine 4</option>
+      <option value="medicine2">Medicine 5</option>
+      <option value="medicine2">Medicine 6</option>
+      <option value="medicine2">Medicine 7</option>
+      <!-- Add more medicine options -->
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="text" id="quantity" name="quantity" placeholder="Enter quantity">
+
+    <label for="delivery">Delivery Address:</label>
+    <input type="text" id="delivery" name="delivery" placeholder="Enter delivery address">
+
+    <button type="submit">Place Order</button>
+  </form>
+</div>
+</body>
+</html>

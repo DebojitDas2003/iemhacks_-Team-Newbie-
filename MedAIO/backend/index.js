@@ -1,15 +1,15 @@
 const express = require('express');
-const mongoose = require('./db');
-const registrationRoutes = require('./registration/routes');
-const loginRoutes = require('./login/routes');
-
 const app = express();
+const PORT = 3000;
 
-app.set('view engine', 'ejs');
-app.use(express.urlencoded({ extended: true }));
-app.use('/registration', registrationRoutes);
-app.use('/login', loginRoutes);
+app.get('/testServer', (req, res) => {
+    res.status(200).send("ok"); // Sending a response with status code 200
+});
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.get('/', (req, res) => {
+    res.status(200).send("Ok"); // Sending a response with status code 200
+});
+
+app.listen(PORT, () => {
+    console.log("Server is running on port " + PORT);
 });
