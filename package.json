@@ -1,0 +1,27 @@
+{
+  "name": "iemhacks_-team-newbie-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DebojitDas2003/iemhacks_-Team-Newbie-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DebojitDas2003/iemhacks_-Team-Newbie-/issues"
+  },
+  "homepage": "https://github.com/DebojitDas2003/iemhacks_-Team-Newbie-#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.4",
+    "nodemon": "^3.0.1"
+  }
+}
